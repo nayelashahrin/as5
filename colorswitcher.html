@@ -1,4 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Switcher Application</title>
+</head>
+<body id="body_element">
 
+    <button id="white">White</button>
+    <button id="black">Black</button>
+    <button id="random">Random</button>
+    <button id="random2">Random 2</button>
+    <button id="random3">Random 3</button>
+
+    <script>
+
+        function switchToBlack()
+        {
+            let body_element = document.getElementById("body_element");
+            body_element.style.backgroundColor = "black";
+        }
+
+        let black = document.getElementById("black");
+        black.addEventListener("click", switchToBlack);
+
+
+        function switchToWhite()
+        {
+            let body_element = document.getElementById("body_element");
+            body_element.style.backgroundColor = "white";
+        }
+
+        let white = document.getElementById("white");
+        white.addEventListener("click", switchToWhite );
+
+        function switchToRandom()
+        {
+            let body_element = document.getElementById("body_element");
+            let random_color = Math.floor(Math.random() * 16777215).toString(16);
+            body_element.style.backgroundColor = "#" + random_color;
+        }
+
+        let random = document.getElementById("random");
+        random.addEventListener("click", switchToRandom);
+
+        function switchToRandom2()
+        {
+            let body_element = document.getElementById("body_element");
+            let random_color = Math.floor(Math.random() * 16777215).toString(16);
+            body_element.style.backgroundColor = "#" + random_color;
+        }
+
+        let random2 = document.getElementById("random2");
+        random2.addEventListener("click", switchToRandom2);
+
+        function switchToRandom3()
+        {
+            let body_element = document.getElementById("body_element");
+            let random_color = Math.floor(Math.random() * 16777215).toString(16);
+            body_element.style.backgroundColor = "#" + random_color;
+        }
+
+        let random3 = document.getElementById("random3");
+        random3.addEventListener("click", switchToRandom3);
+
+    </script>
+
+</body>
+</html>
 <!DOCTYPE html>
 <html>
 <head>
